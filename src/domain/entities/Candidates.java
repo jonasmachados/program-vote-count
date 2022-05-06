@@ -15,9 +15,8 @@ public class Candidates {
 
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         hash = 41 * hash + Objects.hashCode(this.name);
-        hash = 41 * hash + Objects.hashCode(this.numberVotes);
         return hash;
     }
 
@@ -34,9 +33,6 @@ public class Candidates {
         }
         final Candidates other = (Candidates) obj;
         if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.numberVotes, other.numberVotes)) {
             return false;
         }
         return true;
